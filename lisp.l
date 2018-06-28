@@ -1,6 +1,6 @@
 %{
 #include "lisp.h"
-#include "lisp2.tab.h"
+#include "lisp.tab.h"
 #include <stdlib.h>
 #include <string.h>
 extern "C"{

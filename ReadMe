@@ -1,0 +1,18 @@
+>> This is the final project for NCU compiler class.
+
+>> The language features are included in "Compiler Final Project" and "MiniLisp".
+
+>> Use the following command to compile:
+bison -d lisp.y
+g++ -c lisp.tab.c
+flex lisp.l
+g++ -c lex.yy.c
+g++ lex.yy.o lisp.tab.o -o lisp
+
+
+>> To run with test data:
+cat test_data/<filename> | ./lisp
+
+
+>> Helpful reference :
+http://web.iitd.ac.in/~sumeet/flex__bison.pdf

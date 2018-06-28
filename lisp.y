@@ -126,7 +126,6 @@ funcall :
 
 paramlist:
 			exp{
-				cout << "param list" << endl;
 				$$ = newparamlist($1,NULL);
 			}
 
@@ -165,7 +164,7 @@ minus	:
 			'(' '-' exp exp ')' 
 			{
 				$$ = newast('-',$3,$4);
-				cout << "minus" << endl;
+				
 			}
 		;
 multiply:	
@@ -283,7 +282,7 @@ ast* newnamedcall( symbol* f, pmlist* l){
 	}
 	n->name = f;
 	n->pl = l;
-	cout << "in named call " << endl;
+	
 	return (ast*)n;
 }
 ast* newcall(ast* f, pmlist *l){
